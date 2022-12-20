@@ -33,12 +33,13 @@ function onclick(evt) {
       src="${evt.target.dataset.source}"
      >
     `)
+    
     if (!instance.show()) {
        return
     }
 
     document.addEventListener('keydown', (evt) => {
-    if (evt.code === 'Escape') {
+        if (evt.code === 'Escape') {
         instance.close();
   }
 })
